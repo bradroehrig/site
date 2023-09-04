@@ -77,3 +77,17 @@ def recs(request):
 @login_required(login_url='/members/login_user')
 def tips(request):
     return render(request, 'tips.html', {})
+
+import matplotlib.pyplot as plt
+
+import matplotlib.pyplot as plt
+
+def diagram():
+    x = [1, 2, 3]
+    y = [2, 4, 1]
+    fig = plt.figure(figsize=(8, 6))
+    plt.plot(x, y)
+    plt.xlabel('x - axis')
+    plt.ylabel('y - axis')
+    plt.title('My first graph!')
+    plt.show()
